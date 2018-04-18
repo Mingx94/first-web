@@ -1,1 +1,2 @@
-https://ming94.github.io/ming/
+Hello
+https://mingx94.github.io/ming/

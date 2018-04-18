@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ming Website">
+    <meta name="keywords" content="MingXuan, 網頁, Website">
+    <title>MingWeb</title>
+    <link rel="shortcut icon" href="img/m.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="preload" style="display: none"><img src="img/bghome.jpg" alt=""></div>
+    <div class="navbar at_top">
+      <div class="brand"><a href="#page_home">Home</a></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <header class="jumbortron" id="page_home">
+      <div class="container">
+        <h1>Ming<br>Website</h1>
+        <hr>
+        <h4>Web Design Beginner</h4>
+      </div>
+      <div class="scrolldown at_top">v</div>
+    </header>
+    <section id="about">
+      <h2>About</h2>
+      <hr>
+      <p>Hello there!</p>
+      <p>I'm MingXuan.</p>
+      <p>I'm a beginner of web develop.</p>
+      <p>Welcome to Website!</p>
+    </section>
+    <section id="skill">
+      <h2>Skill</h2>
+      <hr>
+      <div class="oc">
+        <div class="container">
+          <div class="card">
+            <div class="front"><img src="img/HTML5.svg" width="150">
+              <h4>HTML</h4>
+            </div>
+            <div class="back">
+              <p>PUG</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="front"><img src="img/CSS3.svg" width="150">
+              <h4>CSS</h4>
+            </div>
+            <div class="back">
+              <p>CSS3<br>FLEX<br>SASS</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="front"><img src="img/JQuery.svg" width="150">
+              <h4>JQuery</h4>
+            </div>
+            <div class="back">
+              <p>DOM<br>EVENT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="works">
+      <div class="box">
+        <h2>Works</h2>
+        <hr>
+        <p>Coming soon...<br><a href="https://github.com/Mingx94/mypage" target="_blank">Github Page</a></p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contanct</h2>
+      <hr>
+      <div class="avatar"></div>
+      <div class="icon"><a href="https://github.com/Mingx94" target="_blank"><img src="img/github.svg" alt="" width="30"></a></div>
+    </section>
+    <footer>
+      <p class="cr">&copy; 2018 MingXuan</p>
+    </footer>
+    <script>
+      $(window).scroll(function (e) {
+      if ($(window).scrollTop() <= 0)
+      	$(".scrolldown, .navbar").addClass("at_top");
+      else
+      	$(".scrolldown, .navbar").removeClass("at_top");
+      });
+      //javascript
+      // function flip(event) {
+      //   var element = event.currentTarget;
+      //   if (element.className === "card") {
+      //     if (element.style.transform == "rotateY(180deg)") {
+      //       element.style.transform = "rotateY(0deg)";
+      //     } else {
+      //       element.style.transform = "rotateY(180deg)";
+      //     }
+      //   }
+      // };
+      //jquery
+      $(".card").click(function () {
+      	var thisCard = $(this);
+      	var isFlip = this.style.transform; //inline style
+      	if (isFlip == "rotateY(180deg)") {
+      		thisCard.css("transform","rotateY(0deg)");
+      		// console.log(isFlip);
+      	} else {
+      		thisCard.css("transform", "rotateY(180deg)");
+      	// console.log(isFlip);
+      	}
+      });
+    </script>
+  </body>
+</html>
