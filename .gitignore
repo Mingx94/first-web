@@ -1,4 +1,4 @@
 sass/
-css/style-dist.css
-prepros-6.config
-index.pug
+node_modules/
+gulpfile.js
+package.json
