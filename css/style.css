@@ -27,31 +27,31 @@ table {
   border-spacing: 0; }
 
 h1, h2, h3, h4, h5, p, a {
-  font-family: "Titillium Web", sans-serif;
-  letter-spacing: .1em; }
+  font-family: "Titillium Web", "source-han-sans-traditional", sans-serif;
+  letter-spacing: 2px; }
 
 h1 {
-  font-size: 8vh;
-  font-weight: bold; }
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5; }
 
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   padding-top: 20px; }
 
 h4 {
-  font-size: 24px;
+  font-size: 22px;
   opacity: 0.8; }
 
 p {
   font-size: 18px;
   opacity: 0.8;
-  line-height: 1.8; }
+  line-height: 2; }
 
 * {
   position: relative;
   box-sizing: border-box;
-  letter-spacing: .1em;
   text-align: center; }
 
 body {
