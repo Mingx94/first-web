@@ -1,129 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ming Website">
-    <meta name="keywords" content="MingXuan, 網頁, Website">
-    <title>MingWeb</title>
-    <link rel="shortcut icon" href="img/m.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://use.typekit.net/yih8mqb.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  </head>
-  <body>
-    <div class="preload" style="display: none"><img src="img/bghome.jpg" alt=""></div>
-    <div class="navbar at_top">
-      <div class="brand"><a href="#page_home">Home</a></div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skill">Skill</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ming Website">
+  <meta name="keywords" content="MingXuan, 網頁, Website">
+  <title>MingWeb</title>
+  <link rel="shortcut icon" href="img/m.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar at_top">
+    <div class="brand">
+      <a href="#page_home">Home</a>
     </div>
-    <header class="jumbortron" id="page_home">
-      <div class="home_container">
-        <h1>Ming<br>Website</h1>
-        <hr>
-        <h4>Web Design Beginner</h4>
-      </div>
-      <span class="scrolldown"></span>
-      <span class="scrolldown"></span>
-      <span class="scrolldown"></span>
-    </header>
-    <section id="about">
-      <h2>About</h2>
-      <hr>
-      <p>Hello there!</p>
-      <p>I'm MingXuan.</p>
-      <p>I'm a beginner of web develop.</p>
-      <p>Welcome to Website!</p>
-      <p>這是一段測試文字</p>
-    </section>
-    <section id="skill">
+    <ul>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#skill">Skill</a>
+      </li>
+      <li>
+        <a href="#works">Works</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+      <li>
+        <a href="https://github.com/Mingx94/ming" target="_blank">Github</a>
+      </li>
+    </ul>
+  </div>
+  <header class="jumbortron" id="page_home">
+    <div class="home_container">
+      <h1>Ming
+        <br>Website</h1>
+      <br>
+      <br>
+      <h4>Web Design Beginner</h4>
+    </div>
+    <span class="scrolldown"></span>
+    <span class="scrolldown"></span>
+    <span class="scrolldown"></span>
+  </header>
+  <section id="about">
+    <h2>About</h2>
+    <hr>
+    <div class="block"></div>
+    <p>Hello there!</p>
+    <p>I'm MingXuan.</p>
+    <p>I'm a beginner of web develop.</p>
+    <p>Welcome to Website!</p>
+    <p>這是一段測試文字</p>
+  </section>
+  <section id="skill">
+    <div class="container">
       <h2>Skill</h2>
       <hr>
-      <div class="card_container">
-        <div class="card">
-          <div class="front"><img src="img/HTML5.svg" width="150">
-            <h4>HTML</h4>
+      <div class="row">
+        <div class="flip_container">
+          <div class="card3D">
+            <div class="front">
+              <img src="img/HTML5.svg" width="150">
+              <h4>HTML</h4>
+            </div>
+            <div class="back">
+              <h4>PUG</h4>
+            </div>
           </div>
-          <div class="back">
-            <h4>PUG</h4>
+        </div>
+        <div class="flip_container">
+          <div class="card3D">
+            <div class="front">
+              <img src="img/CSS3.svg" width="150">
+              <h4>CSS</h4>
+            </div>
+            <div class="back">
+              <h4>CSS3
+                <br>FLEX
+                <br>SASS/SCSS</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flip_container">
+          <div class="card3D">
+            <div class="front">
+              <img src="img/JQuery.svg" width="150">
+              <h4>JQuery</h4>
+            </div>
+            <div class="back">
+              <h4>DOM
+                <br>EVENT</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flip_container">
+          <div class="card3D">
+            <div class="front">
+              <img src="img/Others.svg" width="150">
+              <h4>Others</h4>
+            </div>
+            <div class="back">
+              <h4>gulp</h4>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card_container ">
-        <div class="card">
-          <div class="front"><img src="img/CSS3.svg" width="150">
-            <h4>CSS</h4>
-          </div>
-          <div class="back">
-            <h4>CSS3<br>FLEX<br>SASS/SCSS</h4>
-          </div>
-        </div>
-      </div>
-      <div class="card_container ">
-        <div class="card">
-          <div class="front"><img src="img/JQuery.svg" width="150">
-            <h4>JQuery</h4>
-          </div>
-          <div class="back">
-            <h4>DOM<br>EVENT</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="works">
-      <div class="box">
-        <h2>Works</h2>
-        <hr>
-        <h4>Github Page:<a href="https://github.com/Mingx94/ming/" target="_blank">Click here.</a></h4>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contanct</h2>
+    </div>
+  </section>
+  <section id="works">
+    <div class="container">
+      <h2>Works</h2>
       <hr>
-      <img class="avtar" src="https://i.imgur.com/uvzIAHT.png" alt="">
-      <div class="icon"><a href="https://github.com/Mingx94" target="_blank"><img src="img/github.svg" alt="" width="30"></a></div>
-    </section>
-    <footer>
-      <p class="cr">&copy; 2018 MingXuan</p>
-    </footer>
-    <script>
-      $(window).scroll(function (e) {
-        if ($(window).scrollTop() <= 0){
-          $(".navbar").addClass("at_top");
-        }  else{
-          $(".navbar").removeClass("at_top");
-        }
-      });
-      //javascript
-      // function flip(event) {
-      //   var element = event.currentTarget;
-      //   if (element.className === "card") {
-      //     if (element.style.transform == "rotateY(180deg)") {
-      //       element.style.transform = "rotateY(0deg)";
-      //     } else {
-      //       element.style.transform = "rotateY(180deg)";
-      //     }
-      //   }
-      // };
-      //jquery
-      $(".card").click(function () {
-      	var thisCard = $(this);
-      	var isFlip = this.style.transform; //inline style
-      	if (isFlip == "rotateY(180deg)") {
-      		thisCard.css("transform","rotateY(0deg)");
-      		// console.log(isFlip);
-      	} else {
-      		thisCard.css("transform", "rotateY(180deg)");
-      		// console.log(isFlip);
-      	}
-      });
-    </script>
-  </body>
+      <div class="block"></div>
+      <div class="row">
+        <div class="item col6">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="item col6">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="item col4">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="item col4">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="item col4">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="item col4">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="item col4">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="item col4">
+          <a href="" class="work_img" style="background-image: url('img/bghome.jpg');"></a>
+          <div class="work_detail">
+            <h4>Title</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="contact">
+    <h2>Contanct</h2>
+    <hr>
+    <div class="block"></div>
+    <div class="avatar">
+      <img src="https://i.imgur.com/uvzIAHT.png" alt="">
+    </div>
+    <div class="contact">
+      <div class="icon">
+        <a href="https://github.com/Mingx94" target="_blank">
+          <img src="img/github_black.svg" alt="" width="30">
+          <p>Github</p>
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://github.com/Mingx94" target="_blank">
+          <img src="img/github_black.svg" alt="" width="30">
+          <p>Github</p>
+        </a>
+      </div>
+      <div class="icon">
+        <a id="email" style="cursor: pointer;" data-clipboard-target="#foo">
+          <img src="img/github_black.svg" alt="Clip to copy" width="30">
+          <p id="foo">michael08120812@gmail.com</p>
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+  <footer>
+    <p class="cr">Copyright &copy; 2018 MingXuan</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/all.js"></script>
+
+</body>
+
 </html>
