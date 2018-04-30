@@ -6,29 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ming Website">
   <meta name="keywords" content="MingXuan, 網頁, Website">
-  <title>MingWeb</title>
+  <title>Ming Website</title>
   <link rel="shortcut icon" href="img/m.ico">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 
 <body>
+  <div id="preloader">
+    <div class="loading">
+      <svg id="loading_circle" viewbox="-50 -50 100 80">
+        <circle cx="0" cy="0" r="7"></circle>
+      </svg>
+      <h4 id="loading_text">
+        <span>l</span>
+        <span>o</span>
+        <span>a</span>
+        <span>d</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </h4>
+    </div>
+  </div>
   <div class="navbar at_top">
     <div class="brand">
-      <a href="#page_home">Home</a>
+      <a href="#page_home" class="home-click">Home</a>
     </div>
     <ul>
       <li>
-        <a href="#about">About</a>
+        <a href="#about" class="about-click">About</a>
       </li>
       <li>
-        <a href="#skill">Skill</a>
+        <a href="#skill" class="skill-click">Skill</a>
       </li>
       <li>
-        <a href="#works">Works</a>
+        <a href="#works" class="works-click">Works</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="contact-click">Contact</a>
       </li>
       <li>
         <a href="https://github.com/Mingx94/ming" target="_blank">Github</a>
@@ -48,14 +68,15 @@
     <span class="scrolldown"></span>
   </header>
   <section id="about">
-    <h2>About</h2>
-    <hr>
-    <div class="block"></div>
-    <p>Hello there!</p>
-    <p>I'm MingXuan.</p>
-    <p>I'm a beginner of web develop.</p>
-    <p>Welcome to Website!</p>
-    <p>這是一段測試文字</p>
+    <div class="container">
+      <h2>About</h2>
+      <hr>
+      <div class="block"></div>
+      <p>Hello there!</p>
+      <p>I'm MingXuan.</p>
+      <p>I'm a beginner of web develop.</p>
+      <p>Welcome to Website!</p>
+    </div>
   </section>
   <section id="skill">
     <div class="container">
@@ -187,21 +208,28 @@
     </div>
     <div class="contact">
       <div class="icon">
-        <a href="https://github.com/Mingx94" target="_blank">
-          <img src="img/github_black.svg" alt="" width="30">
-          <p>Github</p>
+        <a id="email" class="tooltip" style="cursor: pointer;" data-clipboard-target="#foo">
+          <p id="foo">
+            <i class="far fa-envelope fa-lg" style="color: #555"></i>
+            mingxcv@gmail.com
+          </p>
+          <span class="tooltiptext">Clip to Copy</span>
         </a>
       </div>
       <div class="icon">
         <a href="https://github.com/Mingx94" target="_blank">
-          <img src="img/github_black.svg" alt="" width="30">
-          <p>Github</p>
+          <p>
+            <i class="fab fa-github-square fa-lg" style="color: #555"></i>
+            Github
+          </p>
         </a>
       </div>
       <div class="icon">
-        <a id="email" style="cursor: pointer;" data-clipboard-target="#foo">
-          <img src="img/github_black.svg" alt="Clip to copy" width="30">
-          <p id="foo">michael08120812@gmail.com</p>
+        <a href="#" target="_blank">
+          <p>
+            <i class="fab fa-facebook-square fa-lg" style="color: #555"></i>
+            Facebook
+          </p>
         </a>
       </div>
     </div>
@@ -213,6 +241,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
   <script src="js/all.js"></script>
 
 </body>

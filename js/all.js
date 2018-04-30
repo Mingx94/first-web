@@ -1,3 +1,7 @@
+$(window).on('load',function() {
+    $("#preloader").fadeOut("slow");
+    $("body").css("overflow","visible");
+});
 $(document).ready(function(){
     $(window).scroll(function (e) {
     if ($(window).scrollTop() <= 0){
@@ -9,18 +13,24 @@ $(document).ready(function(){
     $(".card3D").on('click', (event) => {
         $(event.currentTarget).toggleClass('flip');
     });
+    $(".about-click").click(function(){
+        $('html,body').animate({scrollTop:$('#about').offset().top},600);
+    });
+    $(".home-click").click(function(){
+        $('html,body').animate({scrollTop:$('#page_home').offset().top},600);
+    });
+    $(".skill-click").click(function(){
+        $('html,body').animate({scrollTop:$('#skill').offset().top},600);
+    });
+    $(".works-click").click(function(){
+        $('html,body').animate({scrollTop:$('#works').offset().top},600);
+    });
+    $(".contact-click").click(function(){
+        $('html,body').animate({scrollTop:$('#contact').offset().top},600);
+    });
+    $(".container").smoove({
+        offset  : '10%',
+        moveY   : '100px',
+      });
 });
-
 var clipboard = new ClipboardJS('#email');
-clipboard.on('success', function(e) {
-    console.info('Action:', e.action);
-    console.info('Text:', e.text);
-    console.info('Trigger:', e.trigger);
-
-    e.clearSelection(); //取消選取
-});
-
-clipboard.on('error', function(e) {
-    console.error('Action:', e.action);
-    console.error('Trigger:', e.trigger);
-});
