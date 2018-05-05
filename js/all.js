@@ -1,6 +1,9 @@
 $(window).on('load',function() {
-    $("#preloader").fadeOut("slow");
-    $("body").css("overflow","visible");
+    $("#preloader").delay(900).fadeOut("slow");
+    $("body").delay(1000).queue(function (next) {
+        $(this).css("overflow","visible");
+        next();
+    });
 });
 $(document).ready(function(){
     $(window).scroll(function (e) {
