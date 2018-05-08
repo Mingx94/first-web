@@ -1,6 +1,6 @@
 $(window).on('load',function() {
-    $("#preloader").delay(900).fadeOut("slow");
-    $("body").delay(1000).queue(function (next) {
+    $("#preloader").delay(1500).fadeOut("slow");
+    $("body").delay(1700).queue(function (next) {
         $(this).css("overflow","visible");
         next();
     });
@@ -36,4 +36,5 @@ $(document).ready(function(){
         moveY   : '100px',
       });
 });
+
 var clipboard = new ClipboardJS('#email');
