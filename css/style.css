@@ -168,6 +168,7 @@ body {
   display: inline-block;
   -webkit-animation: loading_text 1.6s infinite linear;
           animation: loading_text 1.6s infinite linear;
+  font-weight: 100;
   font-family: "Arial";
 }
 
@@ -229,10 +230,6 @@ hr {
   background-color: #c48660;
 }
 
-img {
-  margin: 16px 0;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,7 +242,7 @@ img {
   left: 0;
   width: 100%;
   padding: 0 5%;
-  z-index: 99;
+  z-index: 10;
   background-color: #281F1C;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -276,9 +273,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -292,7 +286,8 @@ ul li a {
   position: relative;
   text-align: center;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 ul li a:before, ul li a:after {
@@ -417,10 +412,14 @@ section#skill hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  max-width: 960px;
 }
 
 .flip_container {
@@ -448,10 +447,6 @@ section#skill hr {
           transform: rotateY(180deg);
 }
 
-.card3D h4 {
-  margin: 0;
-}
-
 .front, .back {
   position: absolute;
   border-radius: 7px;
@@ -463,6 +458,14 @@ section#skill hr {
           backface-visibility: hidden;
   height: 100%;
   width: 100%;
+}
+
+.front h4, .back h4 {
+  font-weight: 300;
+}
+
+.front img, .back img {
+  margin: 16px 0 10px 0;
 }
 
 .back {
@@ -477,6 +480,7 @@ section#skill hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 1.8;
 }
 
 section#works {
@@ -547,35 +551,29 @@ section#contact {
   background-color: #f7f5ee;
 }
 
-section#contact:after {
-  content: "";
-  display: block;
-  clear: both;
+section#contact hr {
+  margin-bottom: 80px;
 }
 
-.block {
-  padding: 20px;
+section#contact .row {
+  margin: 0 auto;
 }
 
 .avatar {
-  float: left;
-  width: 50%;
   text-align: right;
 }
 
 .avatar img {
   padding: 0;
   margin: 0;
-  height: 300px;
-  margin-right: 40px;
+  height: 100%;
 }
 
 .contact {
   text-align: left;
-  float: right;
-  width: 50%;
-  padding-top: 0;
   line-height: initial;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .contact a {
@@ -590,7 +588,6 @@ section#contact:after {
   left: -8px;
   right: 1px;
   bottom: -12px;
-  margin: auto;
   border-bottom: 1px solid #777;
   border-right: 1px solid #777;
   height: 6px;
@@ -600,10 +597,26 @@ section#contact:after {
   width: 250px;
 }
 
+.icon {
+  height: 50px;
+  margin: 10px;
+  width: 50%;
+}
+
+.icon p {
+  display: inline-block;
+  width: 250px;
+}
+
+.fab, .far {
+  width: 30px;
+  text-align: center;
+}
+
 /* Tooltip text */
 .tooltiptext {
   opacity: 0;
-  width: 120px;
+  width: 140px;
   background-color: #333;
   color: #eee;
   text-align: center;
@@ -614,8 +627,8 @@ section#contact:after {
   transition: .4s;
   /* Position the tooltip text - see examples below! */
   position: absolute;
-  top: 40px;
-  left: 50px;
+  top: 10px;
+  right: -120px;
   z-index: 1;
 }
 
@@ -624,28 +637,13 @@ section#contact:after {
   opacity: 1;
 }
 
-.icon {
-  padding: 30px 0;
-}
-
-.icon:after {
-  content: "";
-  display: block;
-  clear: left;
-}
-
-.icon p {
-  display: inline-block;
-  width: 250px;
-}
-
 footer {
   text-align: center;
   padding: 50px;
   background-color: #333;
 }
 
-.cr {
+#copyright {
   color: #777;
   font-size: 15px;
   -webkit-transform: skewX(-10deg);

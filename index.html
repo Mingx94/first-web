@@ -91,7 +91,7 @@
               <h4>HTML</h4>
             </div>
             <div class="back">
-              <p>PUG</p>
+              <h4>PUG</h4>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@
               <h4>CSS</h4>
             </div>
             <div class="back">
-              <p>CSS3<br>FLEX<br>SCSS</p>
+              <h4>CSS3<br>FLEX<br>SCSS</h4>
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@
               <h4>JQuery</h4>
             </div>
             <div class="back">
-              <p>DOM<br>EVENT</p>
+              <h4>DOM<br>EVENT</h4>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
               <h4>Others</h4>
             </div>
             <div class="back">
-              <p>gulp</p>
+              <h4>gulp</h4>
             </div>
           </div>
         </div>
@@ -200,42 +200,49 @@
   <section id="contact">
     <h2>Contanct</h2>
     <hr>
-    <!-- <div class="block"></div> -->
-    <div class="avatar">
-      <img src="https://i.imgur.com/uvzIAHT.png" alt="">
+    <div class="row">
+      <div class="avatar col6">
+        <img src="https://i.imgur.com/uvzIAHT.png" alt="">
+      </div>
+      <div class="contact col6">
+        <div class="icon">
+          <a id="email" class="tooltip" style="cursor: pointer;" data-clipboard-target="#foo">
+            <p id="foo">
+              <i class="far fa-envelope fa-lg" style="color: #555"></i>
+              mingxcv@gmail.com</p>
+            <span class="tooltiptext">Clip to Copy</span>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/Mingx94" target="_blank">
+            <p>
+              <i class="fab fa-github fa-lg" style="color: #555"></i>
+              Github
+            </p>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.facebook.com/tasimingxuan" target="_blank">
+            <p>
+              <i class="fab fa-facebook-f fa-lg" style="color: #555"></i>
+              Facebook
+            </p>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://codepen.io/Ming94/" target="_blank">
+            <p>
+              <i class="fab fa-codepen fa-lg" style="color: #555"></i>
+              Codepen
+            </p>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="contact">
-      <div class="icon">
-        <a id="email" class="tooltip" style="cursor: pointer;" data-clipboard-target="#foo">
-          <p id="foo">
-            <i class="far fa-envelope fa-lg" style="color: #555"></i>
-            mingxcv@gmail.com
-          </p>
-          <span class="tooltiptext">Clip to Copy</span>
-        </a>
-      </div>
-      <div class="icon">
-        <a href="https://github.com/Mingx94" target="_blank">
-          <p>
-            <i class="fab fa-github-square fa-lg" style="color: #555"></i>
-            Github
-          </p>
-        </a>
-      </div>
-      <div class="icon">
-        <a href="https://www.facebook.com/tasimingxuan" target="_blank">
-          <p>
-            <i class="fab fa-facebook-square fa-lg" style="color: #555"></i>
-            Facebook
-          </p>
-        </a>
-      </div>
-    </div>
-
-
   </section>
+  
   <footer>
-    <p class="cr">Copyright &copy; 2018 MingXuan</p>
+    <p id="copyright">Copyright &copy; 2018 MingXuan</p>
   </footer>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
