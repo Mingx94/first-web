@@ -1,6 +1,6 @@
 $(window).on('load',function() {
-    $("#preloader").delay(1500).fadeOut("slow");
-    $("body").delay(1700).queue(function (next) {
+    $("#preloader").delay(1000).fadeOut("slow");
+    $("body").delay(1200).queue(function (next) {
         $(this).css("overflow","visible");
         next();
     });
@@ -13,7 +13,7 @@ $(document).ready(function(){
         $(".navbar").removeClass("at_top");
     }
     });
-    $(".card3D").on("click", (event) => {
+    $(".card3D").on("click", function (event) {
         $(event.currentTarget).toggleClass("flip");
     });
     $(".about-click").click(function(){
