@@ -283,6 +283,10 @@ hr {
   line-height: 50px;
 }
 
+.brand a:hover {
+  text-shadow: 0px 0px 7px #ccc;
+}
+
 #hamburger {
   display: none;
   position: fixed;
