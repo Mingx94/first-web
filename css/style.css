@@ -17,7 +17,7 @@ h2 {
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 p {
@@ -118,14 +118,6 @@ a:hover {
   }
 }
 
-body {
-  overflow: hidden;
-  background-image: url("../img/bghome.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50% 60%;
-}
-
 #preloader {
   position: fixed;
   top: 0;
@@ -222,6 +214,16 @@ body {
           animation-delay: .9s;
 }
 
+body {
+  overflow: hidden;
+  background-image: url("../img/bghome.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 60%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 hr {
   border: 0px;
   margin: 20px auto;
@@ -265,8 +267,17 @@ hr {
   line-height: 50px;
 }
 
-#toggleMenu {
+#hamburger {
   display: none;
+  position: fixed;
+  top: 0;
+  right: 5%;
+  color: #eee;
+  line-height: 50px;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 10px;
 }
 
 ul {
@@ -287,7 +298,7 @@ ul li a {
   text-align: center;
   display: block;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 ul li a:before, ul li a:after {
@@ -318,6 +329,27 @@ ul li a:after {
 
 ul li a:hover:after, ul li a:hover:before {
   border-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+  .navbar.at_top {
+    background-color: #281F1C;
+  }
+  .brand {
+    display: block;
+  }
+  ul {
+    display: none;
+  }
+  ul li {
+    display: block;
+  }
+  #hamburger {
+    display: block;
+  }
 }
 
 .jumbortron {
@@ -483,6 +515,19 @@ section#skill hr {
   line-height: 1.8;
 }
 
+@media (max-width: 768px) {
+  #skill .row, #works .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #works .col6, #works .col4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(70% - 30px);
+            flex: 0 0 calc(70% - 30px);
+  }
+}
+
 section#works {
   background-color: #f7f5ee;
   padding: 120px 0;
@@ -616,9 +661,10 @@ section#contact .row {
 /* Tooltip text */
 .tooltiptext {
   opacity: 0;
-  width: 140px;
-  background-color: #333;
+  width: 110px;
+  background-color: rgba(51, 51, 51, 0.7);
   color: #eee;
+  font-size: 16px;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
@@ -627,14 +673,31 @@ section#contact .row {
   transition: .4s;
   /* Position the tooltip text - see examples below! */
   position: absolute;
-  top: 10px;
-  right: -120px;
+  top: 25px;
+  right: -70px;
   z-index: 1;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .tooltiptext {
+    display: none;
+  }
+  #contact .row {
+    display: block;
+  }
+  .avatar {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .icon {
+    margin: 10px auto;
+    width: 250px;
+  }
 }
 
 footer {
