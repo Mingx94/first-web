@@ -216,12 +216,28 @@ a:hover {
 
 body {
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: -2;
   background-image: url("../img/bghome.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 60%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+@media (max-width) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 hr {
@@ -696,7 +712,7 @@ section#contact .row {
   }
   .icon {
     margin: 10px auto;
-    width: 250px;
+    width: 230px;
   }
 }
 
