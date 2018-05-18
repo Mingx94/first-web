@@ -41,7 +41,9 @@ $(document).ready(function(){
 
     $('.navbar a').on('click',function(e){
         var $attr_href = $(e.currentTarget).attr('href');
-        e.preventDefault(); //return false 、 event.preventDefault() 、 或 event.returnValue = false ，避免 <a> 原先應該做的動作。
+        if($attr_href!='https://github.com/Mingx94/ming'){
+            e.preventDefault(); //return false 、 event.preventDefault() 、 或 event.returnValue = false ，避免 <a> 原先應該做的動作。
+        }
         $('html,body').animate({scrollTop:$($attr_href).offset().top},600)
         // console.log($attr_href);
     })
