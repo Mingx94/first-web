@@ -1,0 +1,35 @@
+h1,h2,h3,h4,h5,p,a{
+    font-family: "Open Sans" , "Microsoft JhengHei", sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+}
+h1 {
+    font-family: "Permanent Marker";
+    font-size: 60px;
+    line-height: 1.2;
+}
+h2 {
+    color: $h2_color;
+    font-size: 36px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0;
+    transition-duration: .3s;
+    color: #ccc;
+    &:hover {
+        color: #fff;
+        opacity: 1;
+    }
+}

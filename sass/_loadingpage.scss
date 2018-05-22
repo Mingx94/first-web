@@ -1,0 +1,41 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #555;
+    z-index: 99;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.loading{
+    text-align: center;
+    color: #eee;
+}
+#loading_ball{
+    width: 200px;
+    stroke: skyblue;
+    stroke-width: 3px;
+    & circle{fill: skyblue;}
+    animation: loading_ball 1.6s infinite linear;
+    animation-delay: -.4s;
+}
+
+#loading_text span{
+    display: inline-block;
+    animation: loading_text 1.6s infinite linear;
+    font-weight: 100;
+    font-family: "Arial";
+    &:nth-child(1){animation-delay: 0s}
+    &:nth-child(2){animation-delay: .1s}
+    &:nth-child(3){animation-delay: .2s}
+    &:nth-child(4){animation-delay: .3s}
+    &:nth-child(5){animation-delay: .4s}
+    &:nth-child(6){animation-delay: .5s}
+    &:nth-child(7){animation-delay: .6s}
+    &:nth-child(8){animation-delay: .7s}
+    &:nth-child(9){animation-delay: .8s}
+    &:nth-child(10){animation-delay: .9s}
+}
