@@ -1,2 +1,2 @@
 Hello
-https://mingx94.github.io/ming/
+https://mingx94.github.io/
